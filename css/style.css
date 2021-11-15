@@ -10,41 +10,51 @@
     margin: 0 auto;
     background-color: #fff;
 }
-/* Block Sizes */
-header{
-    height:100px ;
+/* header */
+#main-header{
+    min-height: 100px ;
     background-color: #e579e6;
     margin: 20px 0;
 }
+/* Spotlight */
 
-.image{
-    height: 350px;
+.spotlight{
+    min-height: 350px;
     background-color: #e1d67a;
     margin: 20px 0;
 }
-
+/* main */
 main{
-    width: 1080px;
-    height: 500px;
-    background-color:#abcfe7;
+    width: 1080px; 
     position: relative;
     margin-bottom: 20px;
+    background-color:blue;
+}
+#secondary-header{
+    min-height: 100px ;
+    background-color: #e579e6;
+    /* margin-bottom: 10px; */
 }
 .sidebar, .center-main{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     height: 400px;
     background-color:#abcfe7;
     float: left;
     
 }
+.row{
+    margin: 0 -10px;
+}
 .sidebar{
-    width: 25%;
+    width: calc(25% - 20px);
+    margin: 20px 10px;
+    
 }
 .center-main{
-   width: calc(50% - 40px);
-   margin-right: 20px;
-   margin-left:20px;
+   width:calc(50% - 20px);
+   margin: 20px 10px;
+   
+   
 }
 
 
@@ -53,15 +63,8 @@ footer{
     background-color:#8b00ff;
     margin-bottom: 20px;
 }
-.clearfix{
-    background-color: #0087ff;
-    width: 1080px;
-    position: absolute;
-    bottom: 0;
-    
-}
+
 .clearfix::after{
-  
     clear: both;
     content: '';
     display: table;
